@@ -4,21 +4,33 @@ Grid
 
 body {
   background-color: darkgrey;
-  width: 100%;
-  height: 100%;
+  /* width: 100%; */
+  /* height: 100%; */
 }
 
 .game {
-  box-sizing: border-box;
-  width: 100%;
-  padding: 2em;
+  /* box-sizing: border-box; */
+  /* width: 100%; */
+  padding: 1em;
+  text-align: center;
+  /* display: block; */
+  /* position: relative; */
+  /* text-align: center; */
 }
 
 
 .grid {
-  margin: 2em 2em 2em 2em;
+  margin: 0 auto;
   max-width: 80em;
   background-color: darkgrey;
+  width: 95%;
+  display: block;
+  text-align: center;
+  /* padding: 0; */
+  /* position: absolute; */
+  /* top: 50%; */
+  /* left: 50%; */
+  /* transform: translate(-50%,-50%); */
 }
 
 .tile {
@@ -36,14 +48,14 @@ body {
 @media screen and (min-width: 40em) {
   .tile {
   box-sizing: border-box;
-  display: inline-block;
-  width: 16.0%;
+  width: 16.66%;
   float: left;
   position: relative;
-  padding-bottom: 16.0%;
+  padding-bottom: 16.66%;
   background-color: rgb(232, 68, 68);
   border-radius: 0.5em;
   border: 1px solid darkgrey;
+  display: inline-block;
 }
 }
 
@@ -67,18 +79,18 @@ body {
   height: 100%;
   width: 100%;
   background-color: rgb(232, 68, 68);
-  display: block;
+  display: flex;
   position: absolute;
   border-radius: 0.5em;
+  justify-content: center;
+  align-items: center;
 }
 
 .icon {
   box-sizing: border-box;
   font-family: untitled-font-1;
   font-size: 2em;
-  top: 50%;
-  left: 50%;
-  position: absolute;
+  /* position: absolute; */
 }
 
 .clear {
