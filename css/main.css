@@ -1,0 +1,68 @@
+/******************************
+Grid
+******************************/
+
+body {
+  background-color: darkgrey;
+}
+
+.game {
+  box-sizing: border-box;
+  width: 100%;
+  padding-bottom: 2em;
+}
+
+.grid {
+  margin: 2em 2em 2em 2em;
+  padding: 0;
+  max-width: 80em;
+  box-sizing: border-box;
+  background-color: darkgrey;
+  overflow: auto;
+}
+
+.tile {
+  box-sizing: border-box;
+  display: inline-block;
+  width: 33.33333%;
+  float: left;
+  background-color: darkgrey;
+  position: relative;
+  padding-bottom: 33.33333%;
+}
+
+@media screen and (min-width: 600px) {
+  .tile {
+  box-sizing: border-box;
+  display: inline-block;
+  width: 16.66667%;
+  float: left;
+  background-color: darkgrey;
+  position: relative;
+  padding-bottom: 16.66667%;
+}
+}
+
+.tile input {
+  height: 0;
+  width: 0;
+  position: absolute;
+}
+
+.tile-style {
+  height: 100%;
+  width: 100%;
+  background-color: white;
+  display: block;
+  margin: 0.15em;
+  position: absolute;
+  border-radius: 0.5em;
+}
+
+.icon {
+
+}
+
+.clear {
+  clear: both;
+}
