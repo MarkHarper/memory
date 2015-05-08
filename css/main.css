@@ -121,6 +121,15 @@ Iphone 6+
   border-radius: 0.5em;
   border: 1px solid darkgrey;
   display: inline-block;
+=======
+  width: 16.0%;
+  float: left;
+  position: relative;
+  padding-bottom: 16.0%;
+  background-color: rgb(232, 68, 68);
+  border-radius: 0.5em;
+  border: 1px solid darkgrey;
+>>>>>>> Icons Appear/Disappear
 }
 }
 
@@ -158,12 +167,12 @@ Iphone 6+
   opacity: 0;
 }
 
-
 .tile-style {
   height: 100%;
   width: 100%;
   background-color: rgb(232, 68, 68);
   display: flex;
+  display: block;
   position: absolute;
   border-radius: 0.5em;
   justify-content: center;
