@@ -59,9 +59,9 @@ body {
 }
 }
 
-/******************************
+/*******************************************
 Iphone 6
-******************************/
+*******************************************/
 
 @media only screen
     and (min-device-width : 375px)
@@ -69,7 +69,8 @@ Iphone 6
     and (orientation : landscape)
     and (-webkit-min-device-pixel-ratio : 2)
 {
-  .tile {
+.tile {
+>>>>>>> Adding iphone 6 & 6+ support V1
   box-sizing: border-box;
   width: 16.66%;
   float: left;
@@ -101,9 +102,9 @@ Iphone 6
   }
 }
 
-/******************************
+/*******************************************
 Iphone 6+
-******************************/
+*******************************************/
 
 @media only screen
     and (min-device-width : 414px)
@@ -121,15 +122,6 @@ Iphone 6+
   border-radius: 0.5em;
   border: 1px solid darkgrey;
   display: inline-block;
-=======
-  width: 16.0%;
-  float: left;
-  position: relative;
-  padding-bottom: 16.0%;
-  background-color: rgb(232, 68, 68);
-  border-radius: 0.5em;
-  border: 1px solid darkgrey;
->>>>>>> Icons Appear/Disappear
 }
 }
 
@@ -151,6 +143,10 @@ Iphone 6+
     border: 1px solid darkgrey;
   }
 }
+
+/*******************************************
+Back to normal
+*******************************************/
 
 .tile input {
   height: 0;
