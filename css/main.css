@@ -64,10 +64,9 @@ Iphone 6
 ************************************/
 
 @media only screen 
-    and (min-device-width : 750px) 
-    and (max-device-width : 1334px) 
+    and (min-device-width : 375px) 
+    and (max-device-width : 667px) 
     and (orientation : portrait) 
-    and (-webkit-min-device-pixel-ratio : 2)
 { 
   .tile {
   box-sizing: border-box;
@@ -83,10 +82,9 @@ Iphone 6
 }
 
 @media only screen 
-    and (min-device-width : 1334px) 
-    and (max-device-width : 750px) 
-    and (orientation : landscape) 
-    and (-webkit-min-device-pixel-ratio : 2)
+    and (min-device-width : 375px) 
+    and (max-device-width : 667px) 
+    and (orientation : landscape)
 { 
     .tile {
   box-sizing: border-box;
@@ -106,10 +104,9 @@ Iphone 6+
 ************************************/
 
 @media only screen 
-    and (min-device-width : 1242px) 
-    and (max-device-width : 2208px) 
-    and (orientation : portrait) 
-    and (-webkit-min-device-pixel-ratio : 3)
+    and (min-device-width : 414px) 
+    and (max-device-width : 736px) 
+    and (orientation : portrait)
 { 
   .tile {
   box-sizing: border-box;
@@ -125,10 +122,9 @@ Iphone 6+
 }
 
 @media only screen 
-    and (min-device-width : 2208px) 
-    and (max-device-width : 1242px) 
-    and (orientation : landscape) 
-    and (-webkit-min-device-pixel-ratio : 3)
+    and (min-device-width : 414px) 
+    and (max-device-width : 736px) 
+    and (orientation : landscape)
 { 
     .tile {
   box-sizing: border-box;
