@@ -62,7 +62,7 @@ body {
 /************************************
 Iphone 6
 ************************************/
-
+/*
 @media only screen 
     and (min-device-width : 375px) 
     and (max-device-width : 667px) 
@@ -138,7 +138,7 @@ Iphone 6+
   display: inline-block;
 }
 }
-
+*/
 .tile input {
   height: 0;
   width: 0;
