@@ -1,6 +1,55 @@
 /******************************
+Header
+******************************/
+.header {
+  text-align: center;
+}
+
+header {
+  box-sizing: border-box;
+  padding: 4% 0 2% 0;
+  font-family: 'PT Sans', sans-serif;
+  font-size: 5em;
+  font-weight: 550;
+}
+
+.header-icon {
+  font-family: untitled-font-1;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+/******************************
+Game Tracker
+******************************/
+
+.game-track {
+  padding: 0 1em 2em 1em;
+  box-sizing: border-box;
+  width: 95%;
+  margin: 0 auto;
+}
+
+.lives {
+  font-family: untitled-font-1;
+  float: left;
+  font-size: 1em;
+}
+
+.time {
+  font-size: 1.2em;
+  float: right;
+  font-family: 'PT Sans', sans-serif;
+}
+
+/******************************
 Grid
 ******************************/
+html {
+  font-size: 16px;
+}
+
 
 body {
   background-color: darkgrey;
@@ -59,6 +108,8 @@ body {
 }
 }
 
+
+
 .tile input {
   height: 0;
   width: 0;
@@ -67,12 +118,13 @@ body {
 }
 
 .tile input:not(:checked) + .tile-style .icon {
-  opacity: 1;
+  opacity: 0;
 }
 
 .tile input:checked + .tile-style .icon {
-  opacity: 0;
+  opacity: 1;
 }
+
 
 .tile-style {
   height: 100%;
@@ -89,6 +141,7 @@ body {
   box-sizing: border-box;
   font-family: untitled-font-1;
   font-size: 2em;
+  /* position: absolute; */
 }
 
 .clear {
@@ -102,4 +155,85 @@ footer {
   width: 100%;
   height: 2em;
   clear: both;
+}
+
+/***********************************
+New Game
+***********************************/
+
+.new-game-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-family: 'PT Sans', sans-serif;
+}
+
+.welcome-box {
+  text-align: center;
+}
+
+.menu-header {
+  font-size: 4em;
+  padding-bottom: 0.5em;
+}
+
+.new-game-message {
+  font-size: 1.5em;
+  padding-bottom: 1em;
+}
+
+.menu-button {
+  display: block;
+  text-decoration: none;
+  box-sizing: border-box;
+  padding: 0.5em;
+  margin: 1em auto 1em auto;
+  border: 0.2em solid white;
+  width: 10%;
+  color: black;
+}
+
+/***********************************
+Hard Mode
+***********************************/
+
+.hard-tile {
+  box-sizing: border-box;
+  display: inline-block;
+  width: 25%;
+  float: left;
+  background-color: rgb(232, 68, 68);
+  position: relative;
+  padding-bottom: 25%;
+  border-radius: 0.5em;
+  border: 1px solid darkgrey;
+}
+
+@media screen and (min-width: 40em) {
+  .hard-tile {
+  box-sizing: border-box;
+  width: 12.5%;
+  float: left;
+  position: relative;
+  padding-bottom: 12.5%;
+  background-color: rgb(232, 68, 68);
+  border-radius: 0.5em;
+  border: 1px solid darkgrey;
+  display: inline-block;
+}
+}
+
+.hard-tile input {
+  height: 0;
+  width: 0;
+  position: absolute;
+  z-index: -1;
+}
+
+.hard-tile input:not(:checked) + .tile-style .icon {
+  opacity: 0;
+}
+
+.hard-tile input:checked + .tile-style .icon {
+  opacity: 1;
 }
