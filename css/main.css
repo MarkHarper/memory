@@ -168,7 +168,6 @@ Back to normal
   width: 100%;
   background-color: rgb(232, 68, 68);
   display: flex;
-  display: block;
   position: absolute;
   border-radius: 0.5em;
   justify-content: center;
