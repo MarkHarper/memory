@@ -59,6 +59,90 @@ body {
 }
 }
 
+/************************************
+Iphone 6
+************************************/
+
+@media only screen 
+    and (min-device-width : 750px) 
+    and (max-device-width : 1334px) 
+    and (orientation : portrait) 
+    and (-webkit-min-device-pixel-ratio : 2)
+{ 
+  .tile {
+  box-sizing: border-box;
+  display: inline-block;
+  width: 33.3333%;
+  float: left;
+  background-color: rgb(232, 68, 68);
+  position: relative;
+  padding-bottom: 33.3333%;
+  border-radius: 0.5em;
+  border: 1px solid darkgrey;
+}
+}
+
+@media only screen 
+    and (min-device-width : 1334px) 
+    and (max-device-width : 750px) 
+    and (orientation : landscape) 
+    and (-webkit-min-device-pixel-ratio : 2)
+{ 
+    .tile {
+  box-sizing: border-box;
+  width: 16.66%;
+  float: left;
+  position: relative;
+  padding-bottom: 16.66%;
+  background-color: rgb(232, 68, 68);
+  border-radius: 0.5em;
+  border: 1px solid darkgrey;
+  display: inline-block;
+}
+}
+
+/************************************
+Iphone 6+
+************************************/
+
+@media only screen 
+    and (min-device-width : 1242px) 
+    and (max-device-width : 2208px) 
+    and (orientation : portrait) 
+    and (-webkit-min-device-pixel-ratio : 3)
+{ 
+  .tile {
+  box-sizing: border-box;
+  display: inline-block;
+  width: 33.3333%;
+  float: left;
+  background-color: rgb(232, 68, 68);
+  position: relative;
+  padding-bottom: 33.3333%;
+  border-radius: 0.5em;
+  border: 1px solid darkgrey;
+}
+}
+
+@media only screen 
+    and (min-device-width : 2208px) 
+    and (max-device-width : 1242px) 
+    and (orientation : landscape) 
+    and (-webkit-min-device-pixel-ratio : 3)
+{ 
+    .tile {
+  box-sizing: border-box;
+  width: 16.66%;
+  float: left;
+  position: relative;
+  padding-bottom: 16.66%;
+  background-color: rgb(232, 68, 68);
+  border-radius: 0.5em;
+  border: 1px solid darkgrey;
+  display: inline-block;
+}
+}
+
 .tile input {
   height: 0;
   width: 0;
