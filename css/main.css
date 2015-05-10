@@ -11,6 +11,7 @@ header {
   font-family: 'PT Sans', sans-serif;
   font-size: 5em;
   font-weight: 550;
+  color: white;
 }
 
 .header-icon {
@@ -29,6 +30,7 @@ Game Tracker
   box-sizing: border-box;
   width: 95%;
   margin: 0 auto;
+  color: white;
 }
 
 .lives {
@@ -52,34 +54,22 @@ html {
 
 
 body {
-  background-color: darkgrey;
-  /* width: 100%; */
-  /* height: 100%; */
+  background-color: #3f51b5;
 }
 
 .game {
-  /* box-sizing: border-box; */
-  /* width: 100%; */
   padding: 1em;
   text-align: center;
-  /* display: block; */
-  /* position: relative; */
-  /* text-align: center; */
 }
 
 
 .grid {
   margin: 0 auto;
   max-width: 80em;
-  background-color: darkgrey;
+  background-color: #3f51b5;
   width: 95%;
   display: block;
   text-align: center;
-  /* padding: 0; */
-  /* position: absolute; */
-  /* top: 50%; */
-  /* left: 50%; */
-  /* transform: translate(-50%,-50%); */
 }
 
 .tile {
@@ -87,11 +77,11 @@ body {
   display: inline-block;
   width: 33.3333%;
   float: left;
-  background-color: rgb(232, 68, 68);
+  background-color: #7986cb;
   position: relative;
   padding-bottom: 33.3333%;
   border-radius: 0.5em;
-  border: 1px solid darkgrey;
+  border: 1px solid #3f51b5;
 }
 
 @media screen and (min-width: 40em) {
@@ -101,9 +91,9 @@ body {
   float: left;
   position: relative;
   padding-bottom: 16.66%;
-  background-color: rgb(232, 68, 68);
+  background-color: #7986cb;
   border-radius: 0.5em;
-  border: 1px solid darkgrey;
+  border: 1px solid #3f51b5;
   display: inline-block;
 }
 }
@@ -129,7 +119,7 @@ body {
 .tile-style {
   height: 100%;
   width: 100%;
-  background-color: rgb(232, 68, 68);
+  background-color: #7986cb;
   display: flex;
   position: absolute;
   border-radius: 0.5em;
@@ -141,7 +131,7 @@ body {
   box-sizing: border-box;
   font-family: untitled-font-1;
   font-size: 2em;
-  /* position: absolute; */
+  color: white;
 }
 
 .clear {
@@ -151,14 +141,14 @@ body {
 
 footer {
   display: block;
-  background-color: darkgrey;
+  background-color: #3f51b5;
   width: 100%;
   height: 2em;
   clear: both;
 }
 
 /***********************************
-New Game
+New Game Page
 ***********************************/
 
 .new-game-body {
@@ -166,6 +156,7 @@ New Game
   flex-direction: column;
   justify-content: center;
   font-family: 'PT Sans', sans-serif;
+  color: white;
 }
 
 .welcome-box {
@@ -186,15 +177,43 @@ New Game
   display: block;
   text-decoration: none;
   box-sizing: border-box;
-  padding: 0.5em;
+  padding: 1em;
   margin: 1em auto 1em auto;
-  border: 0.2em solid white;
-  width: 10%;
-  color: black;
+  border: 0.25em solid white;
+  width: 25%;
+  color: white;
+  font-size: 1.1em;
 }
 
+@media screen and (max-width: 40em) {
+  .menu-button {
+  display: block;
+  text-decoration: none;
+  box-sizing: border-box;
+  padding: 1em;
+  margin: 1em auto 1em auto;
+  border: 0.25em solid white;
+  width: 50%;
+  color: white;
+  font-size: 1.1em;
+  }
+}
+
+.welcome-box a {
+  transform: perspective(200px) rotateY(-15deg);
+}
+
+.welcome-box a:last-child {
+  transform: perspective(200px) rotateY(15deg);
+}
+
+/*  Animations */
+
+
+
+
 /***********************************
-Hard Mode
+Hard Mode Page
 ***********************************/
 
 .hard-tile {
@@ -202,11 +221,11 @@ Hard Mode
   display: inline-block;
   width: 25%;
   float: left;
-  background-color: rgb(232, 68, 68);
+  background-color: #7986cb;
   position: relative;
   padding-bottom: 25%;
   border-radius: 0.5em;
-  border: 1px solid darkgrey;
+  border: 1px solid #3f51b5;
 }
 
 @media screen and (min-width: 40em) {
@@ -216,9 +235,9 @@ Hard Mode
   float: left;
   position: relative;
   padding-bottom: 12.5%;
-  background-color: rgb(232, 68, 68);
+  background-color: #7986cb;
   border-radius: 0.5em;
-  border: 1px solid darkgrey;
+  border: 1px solid #3f51b5;
   display: inline-block;
 }
 }
