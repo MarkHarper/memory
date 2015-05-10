@@ -98,6 +98,8 @@ body {
 }
 }
 
+
+
 .tile input {
   height: 0;
   width: 0;
@@ -112,6 +114,7 @@ body {
 .tile input:checked + .tile-style .icon {
   opacity: 1;
 }
+
 
 .tile-style {
   height: 100%;
@@ -146,6 +149,7 @@ footer {
 
 /***********************************
 New Game Page
+=======
 ***********************************/
 
 .new-game-body {
