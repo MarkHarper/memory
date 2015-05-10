@@ -157,6 +157,7 @@ New Game Page
   justify-content: center;
   font-family: 'PT Sans', sans-serif;
   color: white;
+  margin: auto 0 auto 0;
 }
 
 .welcome-box {
